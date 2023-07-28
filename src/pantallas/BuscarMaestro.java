@@ -180,7 +180,7 @@ private int idMaestroSeleccionado;
             }
         });
 
-        btnmostrar.setText("Mostrar todos los maestros");
+        btnmostrar.setText("Mostrar todos los registros");
         btnmostrar.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 btnmostrarActionPerformed(evt);
