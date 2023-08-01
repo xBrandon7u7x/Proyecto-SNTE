@@ -27,16 +27,18 @@
               <Component id="jLabel1" min="-2" pref="171" max="-2" attributes="0"/>
               <EmptySpace min="0" pref="0" max="32767" attributes="0"/>
           </Group>
-          <Group type="102" alignment="0" attributes="0">
+          <Group type="102" attributes="0">
               <EmptySpace min="-2" pref="77" max="-2" attributes="0"/>
               <Group type="103" groupAlignment="0" attributes="0">
                   <Component id="btncerrarsesion" max="32767" attributes="0"/>
-                  <Component id="btn_nuevoregistro" pref="117" max="32767" attributes="0"/>
+                  <Component id="btn_nuevoregistro" max="32767" attributes="0"/>
+                  <Component id="btnregistraradmin" max="32767" attributes="0"/>
               </Group>
               <EmptySpace type="separate" min="-2" max="-2" attributes="0"/>
               <Group type="103" groupAlignment="0" attributes="0">
                   <Component id="btnsalir" max="32767" attributes="0"/>
-                  <Component id="btnvertodos" pref="97" max="32767" attributes="0"/>
+                  <Component id="btnvertodos" max="32767" attributes="0"/>
+                  <Component id="btnveradmin" max="32767" attributes="0"/>
               </Group>
               <EmptySpace min="-2" pref="78" max="-2" attributes="0"/>
           </Group>
@@ -47,12 +49,17 @@
           <Group type="102" alignment="0" attributes="0">
               <EmptySpace max="-2" attributes="0"/>
               <Component id="jLabel1" min="-2" max="-2" attributes="0"/>
-              <EmptySpace min="-2" pref="58" max="-2" attributes="0"/>
+              <EmptySpace type="separate" max="-2" attributes="0"/>
               <Group type="103" groupAlignment="3" attributes="0">
                   <Component id="btn_nuevoregistro" alignment="3" min="-2" max="-2" attributes="0"/>
                   <Component id="btnvertodos" alignment="3" min="-2" max="-2" attributes="0"/>
               </Group>
-              <EmptySpace min="-2" pref="52" max="-2" attributes="0"/>
+              <EmptySpace min="-2" pref="28" max="-2" attributes="0"/>
+              <Group type="103" groupAlignment="3" attributes="0">
+                  <Component id="btnregistraradmin" alignment="3" min="-2" max="-2" attributes="0"/>
+                  <Component id="btnveradmin" alignment="3" min="-2" max="-2" attributes="0"/>
+              </Group>
+              <EmptySpace min="-2" pref="41" max="-2" attributes="0"/>
               <Group type="103" groupAlignment="3" attributes="0">
                   <Component id="btncerrarsesion" alignment="3" min="-2" max="-2" attributes="0"/>
                   <Component id="btnsalir" alignment="3" min="-2" max="-2" attributes="0"/>
@@ -91,7 +98,7 @@
     </Component>
     <Component class="javax.swing.JButton" name="btn_nuevoregistro">
       <Properties>
-        <Property name="text" type="java.lang.String" value="Nuevo Registro"/>
+        <Property name="text" type="java.lang.String" value="Registrar Maestro"/>
       </Properties>
       <Events>
         <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="btn_nuevoregistroActionPerformed"/>
@@ -99,10 +106,26 @@
     </Component>
     <Component class="javax.swing.JButton" name="btnvertodos">
       <Properties>
-        <Property name="text" type="java.lang.String" value="Ver todos"/>
+        <Property name="text" type="java.lang.String" value="Ver todos los maestros"/>
       </Properties>
       <Events>
         <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="btnvertodosActionPerformed"/>
+      </Events>
+    </Component>
+    <Component class="javax.swing.JButton" name="btnregistraradmin">
+      <Properties>
+        <Property name="text" type="java.lang.String" value="Registro admin"/>
+      </Properties>
+      <Events>
+        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="btnregistraradminActionPerformed"/>
+      </Events>
+    </Component>
+    <Component class="javax.swing.JButton" name="btnveradmin">
+      <Properties>
+        <Property name="text" type="java.lang.String" value="Ver administradores"/>
+      </Properties>
+      <Events>
+        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="btnveradminActionPerformed"/>
       </Events>
     </Component>
   </SubComponents>

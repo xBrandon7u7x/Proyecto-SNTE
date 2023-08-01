@@ -32,6 +32,8 @@ public class MenuPrincipal extends javax.swing.JFrame {
         btnsalir = new javax.swing.JButton();
         btn_nuevoregistro = new javax.swing.JButton();
         btnvertodos = new javax.swing.JButton();
+        btnregistraradmin = new javax.swing.JButton();
+        btnveradmin = new javax.swing.JButton();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
@@ -52,17 +54,31 @@ public class MenuPrincipal extends javax.swing.JFrame {
             }
         });
 
-        btn_nuevoregistro.setText("Nuevo Registro");
+        btn_nuevoregistro.setText("Registrar Maestro");
         btn_nuevoregistro.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 btn_nuevoregistroActionPerformed(evt);
             }
         });
 
-        btnvertodos.setText("Ver todos");
+        btnvertodos.setText("Ver todos los maestros");
         btnvertodos.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 btnvertodosActionPerformed(evt);
+            }
+        });
+
+        btnregistraradmin.setText("Registro admin");
+        btnregistraradmin.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnregistraradminActionPerformed(evt);
+            }
+        });
+
+        btnveradmin.setText("Ver administradores");
+        btnveradmin.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnveradminActionPerformed(evt);
             }
         });
 
@@ -77,11 +93,13 @@ public class MenuPrincipal extends javax.swing.JFrame {
                 .addGap(77, 77, 77)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addComponent(btncerrarsesion, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                    .addComponent(btn_nuevoregistro, javax.swing.GroupLayout.DEFAULT_SIZE, 117, Short.MAX_VALUE))
+                    .addComponent(btn_nuevoregistro, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                    .addComponent(btnregistraradmin, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
                 .addGap(18, 18, 18)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addComponent(btnsalir, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                    .addComponent(btnvertodos, javax.swing.GroupLayout.DEFAULT_SIZE, 97, Short.MAX_VALUE))
+                    .addComponent(btnvertodos, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                    .addComponent(btnveradmin, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
                 .addGap(78, 78, 78))
         );
         layout.setVerticalGroup(
@@ -89,11 +107,15 @@ public class MenuPrincipal extends javax.swing.JFrame {
             .addGroup(layout.createSequentialGroup()
                 .addContainerGap()
                 .addComponent(jLabel1)
-                .addGap(58, 58, 58)
+                .addGap(18, 18, 18)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(btn_nuevoregistro)
                     .addComponent(btnvertodos))
-                .addGap(52, 52, 52)
+                .addGap(28, 28, 28)
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(btnregistraradmin)
+                    .addComponent(btnveradmin))
+                .addGap(41, 41, 41)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(btncerrarsesion)
                     .addComponent(btnsalir))
@@ -124,6 +146,18 @@ public class MenuPrincipal extends javax.swing.JFrame {
         abrir.setVisible(true);
         this.setVisible(false);
     }//GEN-LAST:event_btnvertodosActionPerformed
+
+    private void btnregistraradminActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnregistraradminActionPerformed
+        CrearAdmin abrir= new CrearAdmin();
+        abrir.setVisible(true);
+        this.setVisible(false);
+    }//GEN-LAST:event_btnregistraradminActionPerformed
+
+    private void btnveradminActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnveradminActionPerformed
+        BuscarAdmin abrir= new BuscarAdmin();
+        abrir.setVisible(true);
+        this.setVisible(false);
+    }//GEN-LAST:event_btnveradminActionPerformed
 
     /**
      * @param args the command line arguments
@@ -163,7 +197,9 @@ public class MenuPrincipal extends javax.swing.JFrame {
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JButton btn_nuevoregistro;
     private javax.swing.JButton btncerrarsesion;
+    private javax.swing.JButton btnregistraradmin;
     private javax.swing.JButton btnsalir;
+    private javax.swing.JButton btnveradmin;
     private javax.swing.JButton btnvertodos;
     private javax.swing.JLabel jLabel1;
     // End of variables declaration//GEN-END:variables
